@@ -264,25 +264,27 @@ var k = Object.keys(scores)
     var i = k[8]
     var j = k[9]
     var y = k[10]
+    var t = k[11]
     //console.log(scores[a])
 
 
-if (y != null){
-// var scores = data.val();
-// //console.log(keys);
-// var k = Object.keys(scores)
-// console.log(k) 
+// if (y != null){
+// // var scores = data.val();
+// // //console.log(keys);
+// // var k = Object.keys(scores)
+// // console.log(k) 
 
-// firebase.database().ref("test").child(a).remove()
-// head1.innerHTML = k[0]
-head10.innerHTML = scores[y]
+// // firebase.database().ref("test").child(a).remove()
+// // head1.innerHTML = k[0]
+// //head10.innerHTML = scores[y]
 
-var f1 =  firebase.database().ref("test");
-f1.remove()
-console.log(y) 
+// var f1 =  firebase.database().ref("test");
+// f1.remove()
+// f1.child("test").push()
+// console.log(y) 
 
-}
-else{
+// }
+// else{
 var b = scores[a]
 head1.innerHTML = b
 head2.innerHTML = scores[c]
@@ -294,15 +296,20 @@ head7.innerHTML = scores[h]
 head8.innerHTML = scores[i]
 head9.innerHTML = scores[j]
 
-}
 
 
-
-
-
-
+head10.innerHTML = scores[y]
+f1.remove()
 
 }
+
+
+
+
+
+
+
+//}
 
 function ed(err){
 console.log(err);
