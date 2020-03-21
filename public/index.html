@@ -254,17 +254,15 @@ var scores = data.val();
 var k = Object.keys(scores)
 //console.log(k)
     var a = k[0]
-    var c = k[1]
-    var d = k[2]
-    var e  = k[3]
-    var f = k[4]
-    var g = k[5]
-    var h = k[6]
+    var b = k[1]
+    var c = k[2]
+    var d  = k[3]
+    var e = k[4]
+    var f = k[5]
+    var g = k[6]
     var h = k[7]
     var i = k[8]
     var j = k[9]
-    var y = k[10]
-    var t = k[11]
     //console.log(scores[a])
 
 
@@ -278,28 +276,32 @@ var k = Object.keys(scores)
 // // head1.innerHTML = k[0]
 // //head10.innerHTML = scores[y]
 
-// var f1 =  firebase.database().ref("test");
+var f1 =  firebase.database().ref("test");
 // f1.remove()
 // f1.child("test").push()
 // console.log(y) 
 
 // }
 // else{
-var b = scores[a]
-head1.innerHTML = b
-head2.innerHTML = scores[c]
-head3.innerHTML = scores[d]
-head4.innerHTML = scores[e]
-head5.innerHTML = scores[f]
-head6.innerHTML = scores[g]
-head7.innerHTML = scores[h]
-head8.innerHTML = scores[i]
-head9.innerHTML = scores[j]
+head1.innerHTML = scores[a]
+console.log(scores[a])
+head2.innerHTML = scores[b]
+head3.innerHTML = scores[c]
+head4.innerHTML = scores[d]
+head5.innerHTML = scores[e]
+head6.innerHTML = scores[f]
+head7.innerHTML = scores[g]
+head8.innerHTML = scores[h]
+head9.innerHTML = scores[i]
+head10.innerHTML = scores[j]
 
 
 
-head10.innerHTML = scores[y]
+if(a!= null && b!= null && c!= null && d!= null && e!= null && f!= null && g!= null && h!= null && i!= null && j!= null ){
+console.log("hello")
 f1.remove()
+
+}
 
 }
 
